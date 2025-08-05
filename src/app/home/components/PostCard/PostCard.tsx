@@ -1,4 +1,5 @@
 import Tag from "@/app/components/Tag";
+import { MdCalendarToday, MdAccessTime } from "react-icons/md";
 
 const PostCard = () => {
 
@@ -6,7 +7,7 @@ const PostCard = () => {
 
     return (
         <>
-            <div className="container border border-(--border-color) flex">
+            <div className="container border border-(--border-color) flex m-auto">
                 <div className="flex-3/6"></div>
                 <div className="flex-3/6">
                     <div className="flex items-center py-4">
@@ -30,6 +31,16 @@ const PostCard = () => {
                     <p className="mt-4 text-(--secondary-color) font-semibold w-[90%]">
                         Photography has always been more than just a hobby for me—it's a way to freeze time, capture emotions, and tell stories that words sometimes can't express.
                     </p>
+                    <div className="flex mt-4 text-sm font-medium text-(--secondary-color) [&>*]:mr-4">
+                        <div className="flex items-center ">
+                            <MdCalendarToday className="mr-1" />
+                            <p>March 15, 2024</p>
+                        </div>
+                        <div className="flex items-center ">
+                            <MdAccessTime className="mr-1" />
+                            <p>8 min read</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
