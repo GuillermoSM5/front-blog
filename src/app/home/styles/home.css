@@ -1,0 +1,13 @@
+.container-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-subtitle::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
