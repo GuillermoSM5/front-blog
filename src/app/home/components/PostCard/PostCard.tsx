@@ -1,5 +1,8 @@
+import Image from 'next/image'
+import ButtonPB from "@/app/components/ButtonPB";
 import Tag from "@/app/components/Tag";
 import { MdCalendarToday, MdAccessTime } from "react-icons/md";
+import PlaceHolderImage from '../../../../../public/images/placeholder.svg'
 
 const PostCard = () => {
 
@@ -7,10 +10,12 @@ const PostCard = () => {
 
     return (
         <>
-            <div className="container border border-(--border-color) flex m-auto">
-                <div className="flex-3/6"></div>
-                <div className="flex-3/6">
-                    <div className="flex items-center py-4">
+            <div className="container max-h-fit border border-(--border-color) flex m-auto ">
+                <div className="flex-3/6  p-4 relative" >
+                    <Image src={PlaceHolderImage} alt='image for placeholder' width={400} className='m-auto'></Image>
+                </div>
+                <div className="flex-3/6 py-4">
+                    <div className="flex items-center pb-4 ">
                         <div className="bg-(--border-color) w-10 h-10 rounded-full">
                         </div>
                         <div className="ml-4">
@@ -31,7 +36,7 @@ const PostCard = () => {
                     <p className="mt-4 text-(--secondary-color) font-semibold w-[90%]">
                         Photography has always been more than just a hobby for me—it's a way to freeze time, capture emotions, and tell stories that words sometimes can't express.
                     </p>
-                    <div className="flex mt-4 text-sm font-medium text-(--secondary-color) [&>*]:mr-4">
+                    <div className="flex mt-6 mb-6 text-sm font-medium text-(--secondary-color) [&>*]:mr-4">
                         <div className="flex items-center ">
                             <MdCalendarToday className="mr-1" />
                             <p>March 15, 2024</p>
@@ -41,6 +46,7 @@ const PostCard = () => {
                             <p>8 min read</p>
                         </div>
                     </div>
+                    <ButtonPB text="Read Full Article. &rarr" />
                 </div>
             </div>
         </>
