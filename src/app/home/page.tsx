@@ -1,4 +1,5 @@
-import PostCard from "./components/PostCard/PostCard";
+import AllArticles from "./components/AllArticles";
+import PostCard from "./components/PostCard";
 import './styles/home.css'
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <h2 className="font-bold mt-8 container-subtitle mb-4">Mas Reciente</h2>
       <PostCard />
+      <AllArticles />
     </>
   );
 }

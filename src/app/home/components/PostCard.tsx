@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ButtonPB from "@/app/components/ButtonPB";
 import Tag from "@/app/components/Tag";
 import { MdCalendarToday, MdAccessTime } from "react-icons/md";
-import PlaceHolderImage from '../../../../../public/images/Karen-Pape-1800x1200.avif'
+import PlaceHolderImage from '../../../../public/images/Karen-Pape-1800x1200.avif'
 
 const PostCard = () => {
 
