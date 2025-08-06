@@ -2,7 +2,7 @@ import Image from 'next/image'
 import ButtonPB from "@/app/components/ButtonPB";
 import Tag from "@/app/components/Tag";
 import { MdCalendarToday, MdAccessTime } from "react-icons/md";
-import PlaceHolderImage from '../../../../../public/images/placeholder.svg'
+import PlaceHolderImage from '../../../../../public/images/Karen-Pape-1800x1200.avif'
 
 const PostCard = () => {
 
@@ -10,11 +10,11 @@ const PostCard = () => {
 
     return (
         <>
-            <div className="container max-h-fit border border-(--border-color) flex m-auto ">
-                <div className="flex-3/6  p-4 relative" >
-                    <Image src={PlaceHolderImage} alt='image for placeholder' width={400} className='m-auto'></Image>
+            <div className="container  border border-(--border-color) flex m-auto ">
+                <div className="flex-3/6 grid place-items-center p-4" >
+                    <Image src={PlaceHolderImage} alt='image for placeholder' width={400} />
                 </div>
-                <div className="flex-3/6 py-4">
+                <div className="flex-3/6 pl-4 py-4">
                     <div className="flex items-center pb-4 ">
                         <div className="bg-(--border-color) w-10 h-10 rounded-full">
                         </div>
@@ -46,7 +46,7 @@ const PostCard = () => {
                             <p>8 min read</p>
                         </div>
                     </div>
-                    <ButtonPB text="Read Full Article. &rarr" />
+                    <ButtonPB text="Read Full Article." />
                 </div>
             </div>
         </>
