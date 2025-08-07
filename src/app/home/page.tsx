@@ -1,4 +1,4 @@
-import Subscription from "../components/Subscription";
+import Subscription from "./components/Subscription";
 import AllArticles from "./components/AllArticles";
 import PostCard from "./components/PostCard";
 import './styles/home.css'
