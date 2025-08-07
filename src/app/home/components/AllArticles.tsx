@@ -1,3 +1,4 @@
+import ButtonLMA from "@/app/components/ButtonLMA";
 import HorizontalPostCard from "./HorizontalPostCard";
 
 const AllArticles = () => {
@@ -13,7 +14,9 @@ const AllArticles = () => {
                     miArray.map((index) => <HorizontalPostCard key={index} />)
                 }
             </div>
-
+            <div className="flex justify-center mt-16">
+                <ButtonLMA />
+            </div>
         </div>
     );
 }
