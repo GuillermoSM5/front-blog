@@ -10,7 +10,7 @@ const HorizontalPostCard = () => {
     return (
         <div className="border border-(--border-color)   rounded-2xl">
             <div className="h-60 overflow-hidden">
-                <Image src={PlaceHolderImage} alt="Placeholder image" height={800} className="rounded-2xl" />
+                <Image src={PlaceHolderImage} alt="Placeholder image" height={800} className="rounded-t-2xl" style={{ objectFit: 'cover' }} />
             </div>
             <div className="py-6 px-6">
                 <div className="flex [&>*]:mr-2 [&>*]:mb-2 flex-wrap">
