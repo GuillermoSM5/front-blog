@@ -4,7 +4,7 @@ import HorizontalPostCard from "./HorizontalPostCard";
 const AllArticles = () => {
 
     const miArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-    console.log(miArray.length)
+
 
     return (
         <div className="container m-auto mt-12 mb-12">
